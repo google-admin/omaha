@@ -191,7 +191,7 @@ _Request Attributes_
   * `platform`: One of `"win"`, `"mac"`, `"ios"`.
   * `version`: On Windows, the major-minor O/S version, e.g. `"5.1"`, on the Mac, it is `"MacOSX"`. On iOS, `"4.3"`, `"5.1.1"`, etc.
   * `sp`: On Windows, the service-pack version, e.g. `"Service Pack 2"`, on the Mac, OS version and processor architecture, like `"10.5.6_i486"` or `"10.4.11_ppc750"`.
-  * `arch`: One of `"x86"`, `"x64"`, `"arm"`.
+  * `arch`: One of `"x86"`, `"x64"`, `"x86_64"`, `"x86_64h"`, `"arm"`, `"armv7l", `"aarch32"`, `"arm64"`, `"arm64e"`, and `"aarch64"`.
 
 _Response Attributes_
 

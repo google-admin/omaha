@@ -300,7 +300,7 @@ time_t FileTimeToTimeT(const FILETIME& file_time) {
 void TimeTToFileTime(const time_t& time, FILETIME* file_time) {
   ASSERT1(file_time);
 
-  LONGLONG ll = Int32x32To64(time, kSecsTo100ns) + kTimeTConvValue;
+  LONGLONG ll = (static_cast<LONGLONG>(time) * kSecsTo100ns) + kTimeTConvValue;
   file_time->dwLowDateTime = static_cast<DWORD>(ll);
   file_time->dwHighDateTime = static_cast<DWORD>(ll >> 32);
 }
